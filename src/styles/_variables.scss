@@ -1,0 +1,168 @@
+// colors
+$color-white-0: #ffffff;
+$color-white-1: #f5f5f5;
+$color-white-2: #f8fafd;
+$color-white-3: #fbfcfe;
+$color-white-4: #f2f7fe;
+
+$color-black-0: #000000;
+$color-black-1: #3d3d3d;
+$color-black-2: #141414;
+$color-grey-1: #787878;
+$color-grey-2: #666666;
+$color-grey-3: #808080;
+$color-grey-4: #999999;
+$color-grey-5: #898989;
+$color-grey-6: #dedede;
+$color-grey-7: #4d4d4d;
+$color-grey-8: #5d5d5d;
+$color-grey-9: #cccccc;
+
+$color-green-0: #2ab070;
+$color-blue-0: #2c78f6;
+$color-red-0: #e22828;
+
+// fonts
+$fontsize-56: 56px;
+$fontsize-40: 40px;
+$fontsize-32: 32px;
+$fontsize-24: 24px;
+$fontsize-20: 20px;
+$fontsize-16: 16px;
+$fontsize-15: 15px;
+$fontsize-14: 14px;
+$fontsize-13: 13px;
+$fontsize-12: 12px;
+$fontsize-11: 11px;
+$fontsize-10: 10px;
+
+// lineheight
+$lineheight-180: 180%;
+$lineheight-160: 160%;
+$lineheight-150: 150%;
+$lineheight-140: 140%;
+$lineheight-135: 135%;
+$lineheight-125: 125%;
+
+// ****** typeface  ****** //
+
+// bold typeface
+@mixin typeface-bold-56 {
+  font-weight: 700;
+  font-size: $fontsize-56;
+  line-height: $lineheight-125;
+}
+@mixin typeface-bold-40 {
+  font-weight: 700;
+  font-size: $fontsize-40;
+  line-height: $lineheight-135;
+}
+@mixin typeface-bold-32 {
+  font-weight: 700;
+  font-size: $fontsize-32;
+  line-height: $lineheight-140;
+}
+@mixin typeface-bold-24 {
+  font-weight: 700;
+  font-size: $fontsize-24;
+  line-height: $lineheight-140;
+}
+@mixin typeface-bold-20 {
+  font-weight: 700;
+  font-size: $fontsize-20;
+  line-height: $lineheight-150;
+}
+@mixin typeface-bold-16 {
+  font-weight: 700;
+  font-size: $fontsize-16;
+  line-height: $lineheight-150;
+}
+@mixin typeface-bold-14 {
+  font-weight: 700;
+  font-size: $fontsize-14;
+  line-height: $lineheight-150;
+}
+@mixin typeface-bold-12 {
+  font-weight: 700;
+  font-size: $fontsize-12;
+  line-height: 18px;
+}
+// medium typeface
+@mixin typeface-medium-40 {
+  font-weight: 500;
+  font-size: $fontsize-40;
+  line-height: $lineheight-135;
+}
+@mixin typeface-medium-20 {
+  font-weight: 500;
+  font-size: $fontsize-20;
+  line-height: $lineheight-125;
+}
+@mixin typeface-medium-16 {
+  font-weight: 500;
+  font-size: $fontsize-16;
+  line-height: $lineheight-125;
+}
+@mixin typeface-medium-15 {
+  font-weight: 500;
+  font-size: $fontsize-15;
+  line-height: 18px;
+}
+@mixin typeface-medium-14 {
+  font-weight: 500;
+  font-size: $fontsize-14;
+  line-height: $lineheight-150;
+}
+@mixin typeface-medium-13 {
+  font-weight: 500;
+  font-size: $fontsize-13;
+  line-height: 16px;
+}
+@mixin typeface-medium-12 {
+  font-weight: 500;
+  font-size: $fontsize-12;
+  line-height: $lineheight-160;
+}
+// regular typeface
+@mixin typeface-regular-20 {
+  font-weight: 400;
+  font-size: $fontsize-20;
+  line-height: $lineheight-150;
+}
+@mixin typeface-regular-16 {
+  font-weight: 400;
+  font-size: $fontsize-16;
+  line-height: $lineheight-125;
+}
+@mixin typeface-regular-14 {
+  font-weight: 400;
+  font-size: $fontsize-14;
+  line-height: $lineheight-160;
+}
+@mixin typeface-regular-13 {
+  font-weight: 400;
+  font-size: $fontsize-13;
+  line-height: 16px;
+}
+@mixin typeface-regular-12 {
+  font-weight: 400;
+  font-size: $fontsize-12;
+  line-height: $lineheight-160;
+}
+@mixin typeface-regular-11 {
+  font-weight: 400;
+  font-size: $fontsize-11;
+  line-height: 13px;
+}
+@mixin typeface-regular-10 {
+  font-weight: 400;
+  font-size: $fontsize-10;
+  line-height: $lineheight-180;
+}
+
+//mixin for portfolio flex
+
+@mixin flexWithCenterAlign {
+  display: flex;
+  align-items: center;
+}

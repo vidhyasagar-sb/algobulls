@@ -1,0 +1,33 @@
+@import "./variables.scss";
+@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
+
+* {
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+//removing ant design's margin
+
+body {
+  font-feature-settings: normal;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-bottom: 0;
+}
+ol,
+ul,
+dl {
+  margin-bottom: 0;
+}

@@ -1,0 +1,372 @@
+@import "../../styles/common";
+
+.calculator {
+  margin-top: 16px;
+  border: 2px solid $color-white-2;
+  border-radius: 4px;
+  max-width: 586px;
+  flex-basis: 50%;
+
+  .calcHeadingAndInvesmentRange {
+    padding: 24px 24px 12px 24px;
+  }
+
+  .calculatorData {
+    padding: 24px;
+    background-color: $color-white-3;
+  }
+
+  .profitAndLossSection {
+    .twoSlider {
+      display: flex;
+
+      div:first-child {
+        .ant-slider-handle {
+          background-color: #b00606;
+          border: 2px solid #b00606;
+        }
+      }
+      div:last-child {
+        .ant-slider-handle {
+          background-color: $color-green-0;
+          border: 2px solid $color-green-0;
+        }
+      }
+
+      .ant-slider-handle {
+        z-index: 10;
+      }
+    }
+
+    .averageRangeWrapper {
+      display: flex;
+      text-align: center;
+      gap: 41px;
+      justify-content: center;
+
+      .averageRange {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 28px;
+          height: 15px;
+          border-right: 1px solid $color-black-0;
+          opacity: 0.5;
+        }
+      }
+
+      p {
+        @include typeface-regular-11;
+        line-height: 15px;
+        color: $color-black-0;
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .borderedDropdown {
+    display: flex;
+    gap: 16px;
+
+    .brokerDropdown {
+      .ant-select-selector {
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .calculatorHeading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    h3 {
+      color: $color-black-2;
+      @include typeface-medium-14;
+    }
+  }
+
+  .investmentAmount {
+    display: flex;
+
+    .investmentAmountRange {
+      width: 100%;
+
+      .breakevenPoint {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        line-height: 18px;
+        padding-left: 32px;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 100px;
+          bottom: 16px;
+          height: 15px;
+          border-right: 1px solid $color-black-0;
+          opacity: 0.5;
+        }
+
+        .breakevenValue {
+          @include typeface-regular-11;
+          color: $color-black-0;
+          opacity: 0.7;
+        }
+      }
+
+      p {
+        margin-bottom: 6px;
+        color: $color-grey-4;
+        @include typeface-regular-12;
+      }
+    }
+    .exposureRange {
+      margin-right: 37px;
+      p {
+        margin-bottom: 8px;
+        color: $color-grey-2;
+        @include typeface-regular-12;
+      }
+    }
+    .quantityResponsive {
+      display: none;
+      h3 {
+        color: $color-grey-4;
+        @include typeface-regular-12;
+        margin-bottom: 4px;
+      }
+
+      h2 {
+        color: $color-black-1;
+        @include typeface-medium-15;
+      }
+    }
+  }
+
+  .rangeSlider {
+    .ant-slider-handle {
+      background-color: $color-blue-0;
+      border: 2px solid $color-blue-0;
+    }
+
+    .ant-slider-track {
+      background-color: $color-blue-0;
+    }
+
+    .ant-input-number {
+      position: absolute;
+      border: none;
+      bottom: 33px;
+      right: 58px;
+      .ant-input-number-handler-wrap {
+        display: none;
+      }
+      .ant-input-number-out-of-range input {
+        color: $color-black-1 !important;
+      }
+    }
+  }
+
+  .exposureDropdown {
+    .ant-select-selector {
+      border: none !important;
+      color: $color-black-1;
+    }
+  }
+
+  .profitAndLossSection {
+    display: flex;
+    margin-bottom: 27px;
+    .quantity {
+      margin-right: 34px;
+    }
+
+    h3 {
+      color: $color-grey-4;
+      @include typeface-regular-12;
+      margin-bottom: 4px;
+    }
+
+    h2 {
+      color: $color-black-1;
+      @include typeface-medium-15;
+    }
+
+    .pAndLPerDay {
+      margin-right: 42px;
+    }
+
+    .PAndLDetailWrapper {
+      display: flex;
+      gap: 36px;
+      justify-content: space-between;
+    }
+  }
+
+  .returnsSection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    gap: 5px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+
+    h3 {
+      color: $color-grey-4;
+      @include typeface-regular-12;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      color: $color-black-1;
+      @include typeface-medium-15;
+      margin-bottom: 4px;
+    }
+
+    p {
+      color: $color-red-0;
+      @include typeface-regular-12;
+    }
+    .returnDetail:nth-child(even) {
+      p,
+      h2 {
+        color: $color-green-0;
+      }
+    }
+  }
+
+  button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 0;
+    border: 1px solid $color-black-0;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      background-color: $color-blue-0;
+      border: 1px solid $color-blue-0;
+
+      color: $color-white-3;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .calculator {
+    .profitAndLossSection {
+      row-gap: 12px;
+      flex-wrap: wrap;
+
+      .quantity {
+        flex-basis: 100%;
+      }
+    }
+    .returnDetail {
+      padding-right: 10px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .calculator {
+    .investmentAmount {
+      flex-wrap: wrap;
+      row-gap: 16px;
+      .quantityResponsive {
+        display: block;
+      }
+    }
+    .profitAndLossSection {
+      .quantity {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .calculator {
+    margin: 24px auto 0 auto;
+    max-width: none;
+
+    .profitAndLossSection {
+      row-gap: 12px;
+      flex-wrap: nowrap;
+
+      .quantity {
+        flex-basis: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .calculator {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+
+    .calcHeadingAndInvesmentRange {
+      padding: 12px;
+    }
+
+    .calculatorData {
+      padding: 12px;
+    }
+
+    .calculatorHeading {
+      flex-direction: column;
+      row-gap: 12px;
+    }
+
+    .borderedDropdown {
+      gap: 8px;
+    }
+
+    .investmentAmount {
+      row-gap: 16px;
+      .investmentAmountRange {
+        width: auto;
+      }
+    }
+
+    .rangeSlider {
+      .ant-slider {
+        width: 200px !important;
+      }
+      .ant-input-number {
+        right: -33px;
+      }
+    }
+    .profitAndLossSection {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .twoSlider {
+        justify-content: center;
+      }
+
+      .pAndLPerDay {
+        margin-right: 0;
+      }
+    }
+
+    .returnsSection {
+      row-gap: 16px;
+      justify-content: flex-start;
+    }
+    .returnDetail {
+      padding-right: 35px;
+      flex-basis: 40%;
+    }
+  }
+}

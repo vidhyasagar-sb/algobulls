@@ -1,0 +1,145 @@
+@import "../../styles/common";
+
+.details {
+  margin: 0px 42px 0 32px;
+  padding-bottom: 297px;
+
+  .detailsContentAndStrategy {
+    display: flex;
+    gap: 52px;
+
+    .detailsContent {
+      max-width: 474px;
+
+      h3 {
+        color: $color-black-0;
+        @include typeface-bold-12;
+        margin-bottom: 24px;
+      }
+
+      p {
+        color: $color-black-0;
+        @include typeface-regular-12;
+        line-height: 18px;
+        margin-bottom: 24px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .strategy {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    width: 100%;
+    padding: 27px 27px 28px 44px;
+    max-height: 308px;
+
+    p {
+      color: $color-black-0;
+      opacity: 0.3;
+      @include typeface-medium-12;
+      line-height: 18px;
+    }
+
+    .tradeDetailsResponsive {
+      display: none;
+    }
+
+    .tradeDetails {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 27px;
+      .strategyDetailWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 58px;
+      }
+    }
+
+    .strategyDetail {
+      text-align: center;
+
+      h4 {
+        @include typeface-medium-14;
+        line-height: 18px;
+        color: $color-black-0;
+        opacity: 0.9;
+        margin-bottom: 7px;
+      }
+    }
+
+    .verticalSeparator {
+      border-left: 1px solid #d9d9d9;
+      height: 180px;
+    }
+
+    .strategyDetailParameters {
+      p {
+        margin-bottom: 6px;
+      }
+      h5 {
+        @include typeface-medium-13;
+        line-height: 18px;
+        margin-top: 6px;
+      }
+    }
+
+    .tradeDetailsResponsive {
+      .strategyDetailWrapper {
+        display: flex;
+        justify-content: space-evenly;
+
+        .strategyDetail {
+          flex-basis: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .details {
+    padding-bottom: 119px;
+
+    .strategy {
+      flex-basis: 75%;
+    }
+    .detailsContentAndStrategy {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .details {
+    margin: 0 16px;
+    .detailsContentAndStrategy {
+      gap: 24px;
+      .detailsContent {
+        max-width: none;
+      }
+    }
+    .strategy {
+      max-height: none;
+      flex-basis: 100%;
+      padding: 12px;
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+
+      .tradeDetailsResponsive {
+        display: block;
+      }
+
+      .tradeDetails {
+        display: none;
+      }
+
+      .strategyDetailWrapper {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "./styles/common";
+
+.app {
+  margin: 0 auto;
+  max-width: 1440px;
+  .layout {
+    display: flex;
+  }
+
+  .mainComponent {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .app {
+    .SidebarComponent {
+      transform: translateX(-100%);
+      position: absolute;
+    }
+
+    .layout {
+      display: block;
+    }
+  }
+}

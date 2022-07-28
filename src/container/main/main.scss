@@ -1,0 +1,56 @@
+@import "../../styles/common";
+
+.portfolioComponent {
+  width: 100%;
+}
+
+.performanceAndCalculator {
+  display: flex;
+}
+.performanceComponent {
+  flex-basis: 50%;
+}
+.calculatorComponent {
+  flex-basis: 50%;
+  margin-right: 24px;
+}
+
+.detailsBar {
+  color: $color-grey-2;
+  @include typeface-medium-14;
+  line-height: 18px;
+  margin: 0 24px 24px 24px;
+  padding: 0 0 8px 14px;
+  border-bottom: 1px solid $color-grey-6;
+}
+
+@media (max-width: 1200px) {
+  .performanceAndCalculator {
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .performanceComponent {
+      flex-basis: 75%;
+    }
+    .calculatorComponent {
+      flex-basis: 75%;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .performanceAndCalculator {
+    .performanceComponent {
+      flex-basis: 100%;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+    .calculatorComponent {
+      flex-basis: 100%;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+  }
+}
