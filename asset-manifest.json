@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/algobulls/static/css/main.1b0e92f2.css",
-    "main.js": "/algobulls/static/js/main.d7292c47.js",
+    "main.css": "/algobulls/static/css/main.69cc4ce7.css",
+    "main.js": "/algobulls/static/js/main.4cac7a2a.js",
     "static/media/iciciSecurities.svg": "/algobulls/static/media/iciciSecurities.95e5edefbe46591d6e43edb21cc1e9d1.svg",
     "static/media/profilePhoto.svg": "/algobulls/static/media/profilePhoto.6d50448fc1b2568655b61621ccfc24de.svg",
     "static/media/portfolioLogo.svg": "/algobulls/static/media/portfolioLogo.234f82b3f3215129ff10e8c29d9cda83.svg",
@@ -40,11 +40,11 @@
     "static/media/chartToggle.svg": "/algobulls/static/media/chartToggle.0bd804a5c3d8fa7ae94c991bf02b9eca.svg",
     "static/media/rise.svg": "/algobulls/static/media/rise.92642021fe2324c4305448766a947677.svg",
     "static/media/graph.svg": "/algobulls/static/media/graph.915d08fe79a0ea37801a589f80808d29.svg",
-    "main.1b0e92f2.css.map": "/algobulls/static/css/main.1b0e92f2.css.map",
-    "main.d7292c47.js.map": "/algobulls/static/js/main.d7292c47.js.map"
+    "main.69cc4ce7.css.map": "/algobulls/static/css/main.69cc4ce7.css.map",
+    "main.4cac7a2a.js.map": "/algobulls/static/js/main.4cac7a2a.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b0e92f2.css",
-    "static/js/main.d7292c47.js"
+    "static/css/main.69cc4ce7.css",
+    "static/js/main.4cac7a2a.js"
   ]
 }
