@@ -4,7 +4,6 @@ import { RingProgress } from "@ant-design/plots";
 
 const DemoRingProgress = (props) => {
   const percent = parseFloat(props.percent);
-  console.log("percent", percent);
   const name = props.name;
   const config = {
     height: 125,
