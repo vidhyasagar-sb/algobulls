@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./components/navbar";
 import Sidebar from "./components/sidebar";
-import Main from "./container/main";
+import Home from "./container/home";
 
 import "./app.scss";
 
@@ -14,7 +14,7 @@ function App() {
           <Sidebar />
         </div>
         <div className="mainComponent">
-          <Main />
+          <Home />
         </div>
       </div>
     </div>

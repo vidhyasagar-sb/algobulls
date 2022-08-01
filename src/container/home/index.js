@@ -1,15 +1,14 @@
 import React from "react";
-import "./main.scss";
-import "../portfolio";
-import Portfolio from "../portfolio";
-import Performance from "../performance";
-import Calculator from "../calculator";
-import Analysis from "../analysis";
-import Details from "../details";
+import "./home.scss";
+import Portfolio from "../../components/portfolio";
+import Performance from "../../components/performance";
+import Calculator from "../../components/calculator";
+import Analysis from "../../components/analysis";
+import Details from "../../components/details";
 
-const Main = () => {
+const Home = () => {
   return (
-    <div className="main">
+    <div className="home">
       <div className="portfolioComponent">
         <Portfolio />
       </div>
@@ -32,4 +31,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Home;

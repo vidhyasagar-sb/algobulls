@@ -162,7 +162,7 @@ $lineheight-125: 125%;
 
 //mixin for portfolio flex
 
-@mixin flexWithCenterAlign {
+@mixin flexCenterAlign {
   display: flex;
   align-items: center;
 }

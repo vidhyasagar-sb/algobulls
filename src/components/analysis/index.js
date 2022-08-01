@@ -1,6 +1,6 @@
 import React from "react";
 import "./analysis.scss";
-import MultiColorProgressBar from "../../components/multiColorProgressBar";
+import MultiColorProgressBar from "../multiColorProgressBar";
 
 import chartToggle from "../../assets/images/analysis/chartToggle.svg";
 import listToggle from "../../assets/images/analysis/listToggle.svg";

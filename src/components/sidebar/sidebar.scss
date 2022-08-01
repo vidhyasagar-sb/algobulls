@@ -39,7 +39,7 @@
     margin: 0 16px 18px 16px;
 
     .profileDetails {
-      @include flexWithCenterAlign;
+      @include flexCenterAlign;
       padding: 16px 16px 16px 8px;
       gap: 8px;
       margin-bottom: 16px;

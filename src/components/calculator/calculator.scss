@@ -152,6 +152,7 @@
     .ant-slider-handle {
       background-color: $color-blue-0;
       border: 2px solid $color-blue-0;
+      z-index: 10;
     }
 
     .ant-slider-track {

@@ -34,7 +34,7 @@
     }
   }
   .columnHead {
-    @include flexWithCenterAlign;
+    @include flexCenterAlign;
 
     padding: 8px 0;
     gap: 24px;
@@ -48,11 +48,11 @@
 
     .columnHeadBroker {
       padding: 8px 73px 8px 8px;
-      flex-basis: 12%;
+      flex-basis: 14%;
     }
     .columnHeadBar {
       padding: 8px 0 8px 8px;
-      flex-basis: 45%;
+      flex-basis: 42%;
     }
     .columnHeadPercentage {
       display: flex;
@@ -104,7 +104,7 @@
   }
 
   .exploreMoreBar {
-    @include flexWithCenterAlign;
+    @include flexCenterAlign;
     justify-content: space-between;
     margin-top: 10px;
 

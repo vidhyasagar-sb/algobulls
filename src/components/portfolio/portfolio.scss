@@ -4,7 +4,7 @@
   width: 100%;
 
   .portfolioDesktop {
-    @include flexWithCenterAlign;
+    @include flexCenterAlign;
     padding: 24px;
     width: 100%;
     justify-content: space-between;
@@ -27,7 +27,7 @@
     }
 
     .profile {
-      @include flexWithCenterAlign;
+      @include flexCenterAlign;
       gap: 2px;
 
       p {
@@ -41,7 +41,7 @@
       }
     }
     .followers {
-      @include flexWithCenterAlign;
+      @include flexCenterAlign;
       gap: 4px;
       margin: 4px 0;
       p {
@@ -51,7 +51,7 @@
       }
     }
     .bollingerBands {
-      @include flexWithCenterAlign;
+      @include flexCenterAlign;
       gap: 4px;
       color: $color-grey-1;
       @include typeface-regular-11;
@@ -149,14 +149,14 @@
     }
 
     .portfolioHead {
-      @include flexWithCenterAlign;
+      @include flexCenterAlign;
       justify-content: space-between;
       padding-bottom: 6px;
       border-bottom: 0.7px solid #d9d9d9;
     }
 
     .profile {
-      @include flexWithCenterAlign;
+      @include flexCenterAlign;
       gap: 2px;
 
       p {
@@ -174,7 +174,7 @@
     }
 
     .followers {
-      @include flexWithCenterAlign;
+      @include flexCenterAlign;
       gap: 4px;
       p {
         @include typeface-regular-12;
@@ -199,7 +199,7 @@
     }
 
     .portfolioFuture {
-      @include flexWithCenterAlign;
+      @include flexCenterAlign;
       justify-content: space-between;
       margin: 8px 0 15px 0;
 
@@ -228,7 +228,7 @@
     }
 
     .strategyDetail {
-      @include flexWithCenterAlign;
+      @include flexCenterAlign;
       justify-content: space-between;
       margin-bottom: 6px;
 
@@ -252,7 +252,7 @@
     }
 
     .buySellData {
-      @include flexWithCenterAlign;
+      @include flexCenterAlign;
       justify-content: space-between;
       text-align: center;
       margin-bottom: 8px;
@@ -278,7 +278,7 @@
       }
 
       .entryWrapper {
-        @include flexWithCenterAlign;
+        @include flexCenterAlign;
         gap: 4px;
         justify-content: center;
       }
@@ -291,7 +291,7 @@
         }
       }
       .exitWrapper {
-        @include flexWithCenterAlign;
+        @include flexCenterAlign;
         gap: 4px;
         justify-content: center;
       }
@@ -306,7 +306,7 @@
       }
 
       .trendingWrapper {
-        @include flexWithCenterAlign;
+        @include flexCenterAlign;
         gap: 2px;
         justify-content: center;
       }
@@ -314,7 +314,7 @@
 
     .capitalRisks {
       background-color: $color-white-2;
-      @include flexWithCenterAlign;
+      @include flexCenterAlign;
       gap: 8px;
       justify-content: space-evenly;
       text-align: center;

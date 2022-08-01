@@ -12,42 +12,44 @@ import toggleMenu from "../../assets/images/common/toggleMenu.svg";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
-      <div className="logoIndiceWrapper">
-        <img className="logo" src={logo} alt="logo" />
-        <img className="toggleMenu" src={toggleMenu} alt="toggle" />
-        <div className="indices nifty">
-          <p>NIFTY 50</p>
-          <p>14400</p>
-          <p>0.18%</p>
+    <header>
+      <div className="navbar">
+        <div className="logoIndiceWrapper">
+          <img className="logo" src={logo} alt="logo" />
+          <img className="toggleMenu" src={toggleMenu} alt="toggle" />
+          <div className="indices nifty">
+            <p>NIFTY 50</p>
+            <p>14400</p>
+            <p>0.18%</p>
+          </div>
+          <div className="indices">
+            <p>SENSEX</p>
+            <p>32500</p>
+            <p>0.19%</p>
+          </div>
         </div>
-        <div className="indices">
-          <p>SENSEX</p>
-          <p>32500</p>
-          <p>0.19%</p>
+        <div className="quickNav">
+          <img src={notification} alt="notification" />
+          <img className="curveArrow" src={curveArrow} alt="curved arrow" />
+          <img className="help" src={help} alt="help" />
+          <div className="wallet">
+            <img src={wallet} alt="wallet" />
+            <p>₹ 2000</p>
+          </div>
+          <div className="navbarDropdown">
+            <Dropdown
+              option={[
+                <div>
+                  <img src={flag} alt="brokers" /> <span>IN</span>
+                </div>,
+              ]}
+              defaultValue={"country"}
+              width={88}
+            />
+          </div>
         </div>
       </div>
-      <div className="quickNav">
-        <img src={notification} alt="notification" />
-        <img className="curveArrow" src={curveArrow} alt="curved arrow" />
-        <img className="help" src={help} alt="help" />
-        <div className="wallet">
-          <img src={wallet} alt="wallet" />
-          <p>₹ 2000</p>
-        </div>
-        <div className="navbarDropdown">
-          <Dropdown
-            option={[
-              <div>
-                <img src={flag} alt="brokers" /> <span>IN</span>
-              </div>,
-            ]}
-            defaultValue={"country"}
-            width={88}
-          />
-        </div>
-      </div>
-    </div>
+    </header>
   );
 };
 
